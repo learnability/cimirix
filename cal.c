@@ -75,9 +75,11 @@ int mod()
 
  void pow1()
 {
-float a,b,ans;
-printf("Enter you number and its power\n");
-scanf("%f,%f",&a,&b);
+float a,ans; int b;
+printf("Enter you number \n");
+scanf("%f",&a);
+printf("Enter the power \n");
+scanf("%d",&b);
 ans=pow(a,b);
 printf("%f\n",ans);
 }
