@@ -1,9 +1,11 @@
 #include<stdio.h>
 int add()
+//Function to add two numbers
 {
 	printf("Enter first number: ";
-	scanf("%d", &a);
 	int a, b, sum;
+	scanf("%d", &a);
+	
 	printf("Enter second number: ";
 	scanf("%d", &b);
 	printf("The sum of the numbers is: %d", sum=a+b);
