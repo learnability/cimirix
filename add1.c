@@ -4,13 +4,13 @@
 int add()
 //Function to add two numbers
 {
-	printf("Enter first number: ";
+	printf("Enter first number:");
 	int a, b, sum;
 	scanf("%d", &a);
 	
-	printf("Enter second number: ";
+	printf("Enter second number:");
 	scanf("%d", &b);
-	printf("The sum of the numbers is: %d", sum=a+b);
+	printf("The sum of the numbers is: %d\n", sum=a+b);
 	return 1;
 }
 
@@ -18,10 +18,10 @@ int subtract()
 //FUNCTION FOR SUBTRACTING TWO NUMBERS		
 {
 	int a,b,s;                           //initializing
-	printf("Enter the two numbers: ";	
+	printf("Enter the two numbers:");	
 	scanf("%d %d", &a,&b);		     //input from user
 	s=a-b;							//aDDING a and b
-	printf("%d-%d=%d",a,b,s);				//printing result
+	printf("%d-%d=%d\n",a,b,s);				//printing result
 	return 0;
 }
 	
@@ -33,31 +33,31 @@ void mlpy() 																				/*Function for multiplication*/
 	printf(" %d x %d = %d\n",a ,b, a*b);												/*Printing*/
 }
 
-void div(float m, float n)
+void div()
 {
   float a,b,ans;
   printf("Enter ur first number\n");
   scanf("%f",&a);
   printf("Enter ur second number \n");
   scanf("%f",&b);
-  if(n!=0)
-  ans= m/n;
-   printf("Quotent : %f", ans);
+  if(b!=0)
+  ans= a/b;
+   printf("Quotent : %f\n", ans);
  }
  
 int mod()
 {
 	printf("Enter 2 numbers: ");
 	int a,b,m;
-	scanf("%d %d", a,b);
+	scanf("%d %d", &a,&b);
 	if(a>=b)
 	{
 		m=a%b;
-		printf("%d % %d = %d",a,b,m);
+		printf("%d % %d = %d\n",a,b,m);
 	}
 	else if(b>a)
 	{
-		printf("Error! 1st number has to be greater than 2nd number");
+		printf("Error! 1st number has to be greater than 2nd number\n");
 	}
 	return 0;
 }
@@ -70,14 +70,23 @@ int mod()
 	printf("Enter a number");
 	scanf("%f", &a);
 	b=log(a);
-	printf("log(%f)=%f",a,b);
+	printf("log(%f)=%f\n",a,b) ;
 } 
+
+ void pow1()
+{
+float a,b,ans;
+printf("Enter you number and its power\n");
+scanf("%f,%f",&a,&b);
+ans=pow(a,b);
+printf("%f\n",ans);
+}
  	
 int main()
 {
-	printf("Welcome to a Simple Calculator");
+	printf("\nWelcome to a Simple Calculator");
 	
-	printf("\n\nChoose an operation:\n1.Addition\n2.Subtraction\n3.Multiplication\n4.Division\n5.Log\n6.Power\n7.Mod\n8.Exit");
+	printf("\n\nChoose an operation:\n1.Addition\n2.Subtraction\n3.Multiplication\n4.Division\n5.Log\n6.Power\n7.Mod\n8.Exit\n");
 	int choice;
 	scanf("%d", &choice);
 	switch(choice)
@@ -90,7 +99,7 @@ int main()
 			subtract();
 			main();
 		case 3:
-			mltpy();
+			mlpy();
 			main();
 			
 		case 4:
