@@ -53,7 +53,7 @@ int mod()
 	if(a>=b)
 	{
 		m=a%b;
-		printf("%d % %d = %d\n",a,b,m);
+		printf("%d mod %d = %d\n",a,b,m);
 	}
 	else if(b>a)
 	{
