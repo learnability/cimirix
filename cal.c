@@ -69,7 +69,7 @@ int mod()
 	float a,b;
 	printf("Enter a number");
 	scanf("%f", &a);
-	b=log(a);
+	b=log10(a);
 	printf("log(%f)=%f\n",a,b) ;
 } 
 
